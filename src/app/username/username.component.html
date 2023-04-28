@@ -1,0 +1,15 @@
+<input 
+    [(ngModel)]="userName" 
+    type="text"
+    class="form-control"
+    (input)="userNameButtonActivate()">
+
+<button
+    [disabled]="resetUserAvailable"
+    (click)="userNameReset()"
+    class="btn btn-primary"> Reset Username
+</button>
+
+
+
+<p>{{ userName }}</p>
